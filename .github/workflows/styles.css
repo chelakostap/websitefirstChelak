@@ -1,0 +1,578 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: 'Amatic SC';
+    src: url('assets/AmaticSC-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Jura';
+    src: url(assets/Jura/static/Jura-Regular.ttf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+header{
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #7C0F00;
+}
+
+.logo{
+    width: 15%;
+    display: flex;
+    margin-left: 20px;
+}
+
+
+
+.logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+}
+
+.menu{
+    display: flex;
+    width: 50%;
+    font-size: 24px;
+    font-family: Jura;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.social_list{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 230px;
+}
+
+.main{
+    margin: 0;
+    background-image: url(assets/main.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding: 100px 15px 70px 15px;
+    border-bottom-left-radius: 50px;
+    border-bottom-right-radius: 50px;
+}
+
+.main h1{
+    font-family: 'Amatic SC';
+    font-size: 100px;
+    text-align: center;
+    color: white;
+}
+
+.main h2{
+    font-family: 'Jura';
+    font-size: 40px;
+    text-align: center;
+    margin-top: 50px;
+    color: white;
+    opacity: 80%;
+}
+
+
+.products{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.products h1{
+    font-family: 'Jura';;
+    font-size: 60px;
+    text-align: center;
+    color: #7C0F00;
+}
+
+.products_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    max-width: 1300px;
+}
+
+.product_block{
+    background-color: #7C0F00;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    margin: 15px;
+    color: white;
+    font-family: Jura;
+    width: 300px;
+    padding-bottom: 10px;
+}
+
+.product_block:hover{
+    background-color: #5a0b00;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+.product_block:active{
+    background-color: #7C0F00;
+}
+
+.img_cont{
+    width: 90%;
+    border-radius: 20px;
+    background-color: white;
+    margin-top: 5%;
+}
+
+.product_block img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    max-height: 241px;
+}
+
+.product_info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+}
+
+.pros{
+    padding-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.pros h1{
+    font-family: 'Jura';
+    font-size: 60px;
+    color: #7C0F00;
+}
+
+.pros_block{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: normal;
+    margin: 5px;
+}
+
+.pros_banner{
+    width: 350px;
+    background-color: #7C0F00;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.pros_banner h2{
+    font-family: 'Jura';
+    margin-top: 5px;
+    font-size: 36px;
+    color: white;
+}
+
+.pros_banner p{
+    font-family: 'Jura';
+    font-size: 24px;
+    color: white;
+}
+
+.video{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    margin-top: 50px;
+    font-family: 'Jura';
+    color: white;
+    max-height: 400px;
+}
+
+.video h2{
+    position: absolute;
+    z-index: 1;
+}
+
+
+.video video {
+    height: 400px;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    filter: brightness(0.5);
+    z-index: 0;
+}
+
+
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.about h1{
+    font-family: 'Jura';
+    font-size: 60px;
+    color: #7C0F00;
+}
+
+.about_block{
+    max-width: 1000px;
+    background-color: #7C0F00;
+    font-family: Jura;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+    line-height: 1.45;
+}
+
+.delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 15px 0 15px;
+}
+
+.delivery h1{
+    font-family: 'Jura';
+    font-size: 60px;
+    color: #7C0F00;
+}
+
+.deli_block h1{
+    line-height: 1;
+    color: white;
+}
+
+.deli_logo{
+    display: flex;
+    justify-content: center;
+}
+
+.deli_block{
+    display: flex;
+    flex-direction: column;
+    max-width: 1000px;
+    background-color: #1E1E1E;
+    font-family: Jura;
+    margin: 20px;
+    padding: 40px;
+    border-radius: 10px;
+    color: white;
+    font-size: 26px;
+    line-height: 1.45;
+}
+
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 50px 15px;
+}
+
+.contact h2 {
+    font-family: 'Jura';
+    font-size: 40px;
+    color: #7C0F00;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    max-width: 600px;
+    background-color: #7C0F00;
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+    font-family: 'Jura';
+}
+
+.contact label {
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.contact input, .contact textarea {
+    font-family: 'Jura';
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+}
+
+.contact button {
+    font-family: 'Jura';
+    font-size: 20px;
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: white;
+    color: #7C0F00;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    max-width: 200px;
+    align-self: center;;
+}
+
+.contact button:hover {
+    background-color: #f0f0f0;
+}
+
+
+
+footer{
+    background-color: #7C0F00;
+    display: flex;
+    justify-content: center;
+    height: 200px;
+}
+
+.footer_block{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer_logo{
+    width: 170px;
+    display: flex;
+    justify-content: center;
+}
+
+.footer_logo img{
+    width: 100%;
+    height: 100%;
+    max-width: 100px;
+}
+
+.loc{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Jura;
+}
+
+.loc p{
+    text-align: center;
+}
+
+.phone{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-family: Jura;
+    padding-left: 10px;
+}
+
+.phone p{
+    margin: 0;
+}
+
+
+.burger, #toggle, nav{
+    display: none;
+}
+
+
+@media(max-width: 1350px){
+    .menu{
+        width: 65%;
+    }
+}
+
+@media(max-width:1000px){
+	.menu{
+		display: none;
+	}
+
+    .logo{
+        display: none;
+    }
+
+	.burger{
+	  max-width: 55px;
+      display: block;
+      color: #999999;
+      position: fixed;
+      cursor: pointer;
+      margin: 20px;
+      right: 12px;
+      top: 7px;
+      z-index: 5;
+    }
+
+    .burger img{
+    	width: 100%;
+    }
+
+    .burger:hover{
+      color: #999;
+    }
+
+    nav{
+      position: fixed;
+      height: 200px;
+      left: -30px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: flex-end;
+      background: #7C0F00;
+      padding: 15px;
+      transform: translateY(-250px);
+      width: 100%;
+      z-index: 4;
+    }
+
+    nav a{
+      font-size: 30px;
+      font-family: Jura;
+      text-decoration: none;
+      line-height: 40px;
+      color: white;
+      text-align: center;
+      align-self: center;
+    }
+
+    #toggle{
+      display: none;
+    }
+
+    #toggle:checked + .burger + nav {
+      transform: translateY(0px);
+      transition: 0.3s ease;
+    }
+}
+
+
+
+@media(max-width:800px){
+    .product_block{
+        max-width: 150px;
+    }
+
+    .product_info{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product_info h3, div{
+        font-size: 14px;
+        margin: 3px 0px;
+    }
+}
+
+
+@media(max-width: 500px){
+    .pros_banner {
+        width: 100%;
+        max-width: 220px;
+    }
+
+    .pros_banner h2{
+        font-size: 20px;
+    }
+
+    .pros_banner p{
+        font-size: 15px;
+    }
+
+    .pros h1{
+        font-size: 40px;
+    }
+
+    .about_block{
+        font-size: 12px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .about h1{
+        font-size: 40px;
+    }
+
+    .delivery h1{
+        font-size: 40px;
+    }
+
+    .deli_block{
+        font-size: 20px;
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .deli_block h1{
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .deli_block ul, ol{
+        font-size: 15px;
+    }
+
+    .footer_block{
+        flex-direction: column;
+        height: max-content;
+    }
+
+    footer{
+        height: max-content;
+        padding: 20px;
+    }
+
+    .footer_logo{
+        margin-bottom: 20px;
+    }
+
+    .main h1{
+        font-size: 70px;
+    }
+
+    .main h2{
+        font-size: 30px;
+    }
+
+    .products h1{
+        font-size: 40px;
+    }
+
+    
+}
